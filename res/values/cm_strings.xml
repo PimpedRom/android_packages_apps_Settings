@@ -1070,6 +1070,15 @@
     <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
     <string name="expanded_desktop_title">Expanded desktop options</string>
 
+    <string name="expanded_desktop_title">Floating Windows</string>
+    <string name="floating_windows_default_snap">Choose default behavior</string>
+    
+    <!-- Pie controls -->
+    <string name="pie_date_format">ccc, dd MMM yyyy</string>
+    <string name="pie_hour_format_12">hh:mm</string>
+    <string name="pie_hour_format_24">HH:mm</string>
+    <string name="pie_am_pm">a</string>
+    
     <string name="title_general">General</string>
     <string name="lockscreen_targets_message">Lock screen shortcuts</string>
     <string name="lockscreen_default_target">Default</string>
@@ -1354,4 +1363,22 @@
     <string name="lto_download_data_wifi_only_on">Over any networks</string>
     <string name="lto_download_data_wifi_only_off">Only over Wi\u2011Fi networks</string>
 
+    <!-- Pie control -->
+    <string name="pa_piecontrol_settings_summary">Pie settings for angle, size and item gap</string>
+    <string name="pa_pie_control_title">Pie Control</string>
+    <string name="pa_pie_control_enable_title">Enable Pie Control</string>
+    <string name="pa_pie_style_title">Pie Style</string>
+    <string name="pa_pie_size_title">Pie Size</string>
+    <string name="pa_pie_size_summary">Define Pie controls size</string>
+    <string name="pa_pie_size_small">Small</string>
+    <string name="pa_pie_size_default">@string/pa_pie_mode_default</string>
+    <string name="pa_pie_size_large">Large</string>
+    <string name="pa_pie_size_gigantic">Gigantic</string>
+    <string name="pa_pie_mode_default">Default</string>
+    <string name="pa_pie_mode_title">Pie Style</string>
+    <string name="pa_pie_mode_summary">Manage how animations and status additions will be handled</string>
+    <string name="pa_pie_mode_bare">Bare</string>
+    <string name="pa_pie_mode_quick">Quick</string>
+    <string name="pa_pie_mode_default">Default</string>
+    <string name="pa_pie_mode_slow">Slow</string>
 </resources>

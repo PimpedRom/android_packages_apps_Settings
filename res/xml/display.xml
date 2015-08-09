@@ -125,23 +125,13 @@
     <PreferenceCategory
             android:key="interface"
             android:title="@string/category_interface">
+            
         <!-- expanded desktop -->
         <PreferenceScreen
                 android:key="expanded_desktop"
                 android:title="@string/power_menu_expanded_desktop"
                 android:fragment="com.android.settings.applications.ExpandedDesktopPreferenceFragment"
                 settings:advanced="true"/>
-
-        <!-- Floating Windows -->
-        <PreferenceCategory
-            android:key="floating_windows"
-            android:title="@string/exp_floating_windows">
-            
-        <ListPreference
-            android:key="floating_windows_default_snap"
-            android:title="@string/floating_windows_default_snap"
-            android:persistent="false"
-            settings:advanced="true" />
 
         <!--PA Pie Control -->
         <PreferenceScreen
@@ -192,5 +182,4 @@
                 android:fragment="com.android.settings.notificationlight.NotificationLightSettings" />
 
     </PreferenceCategory>
-
 </PreferenceScreen>

@@ -92,7 +92,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
     private static final String KEY_LCD_DENSITY = "lcd_density";
-    private static final String KEY_FLOATING_WINDOWS_DEFAULT_SNAP = "floating_windows_default_snap";
+
     private static final String KEY_FONT_SIZE = "font_size";
     private static final String KEY_SCREEN_SAVER = "screensaver";
     private static final String KEY_LIFT_TO_WAKE = "lift_to_wake";
@@ -210,15 +210,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             }
             mLcdDensityPreference.setOnPreferenceChangeListener(this);
             updateLcdDensityPreferenceDescription(currentDensity);
-        }
-        
-        mFloatingDefaultSnapPreference = (ListPreference) findPreference(KEY_FLOATING_WINDOWS_DEFAULT_SNAP);
-        if (mFloatingDefaultSnapPreference != null) {
-            String[] snapEntries = ["Default", "Snap Top", "Snap Bottom", "Snap Left",  "Snap Right"];
-            int[] snapValues = [0, 2, 4, 1, 3];
-            mFloatingDefaultSnapPreference.setEntries(densityEntries);
-            mFloatingDefaultSnapPreference.setEntryValues(snapValues);
-            mFloatingDefaultSnapPreference.setOnPreferenceChangeListener(this);
         }
 
         mFontSizePref = (FontDialogPreference) findPreference(KEY_FONT_SIZE);

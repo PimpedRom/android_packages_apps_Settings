@@ -124,7 +124,7 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.paranoid.PieControl" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
-                android:resource="@id/display_settings" />
+                android:resource="@id/display_and_lights_settings" />
         </activity>
 
         <!-- Alias for launcher activity only, as this belongs to each profile. -->

@@ -57,13 +57,13 @@ public class PieControl extends SettingsPreferenceFragment implements OnPreferen
 
         mPieSize = (ListPreference) prefSet.findPreference(PA_PIE_SIZE);
             float pieSize = Settings.System.getFloat(mResolver,
-                    Settings.System.PA_PIE_SIZE, 1.0f);
+                    "pie_size", 1.0f);
             mPieSize.setValue(String.valueOf(pieSize));
         mPieSize.setOnPreferenceChangeListener(this);
 
         mPieMode = (ListPreference) prefSet.findPreference(PA_PIE_MODE);
         int pieMode = Settings.System.getInt(mResolver,
-                Settings.System.PA_PIE_MODE, -1); // default is bare pie mode (-1)
+                "pie_mode", -1); // default is bare pie mode (-1)
         mPieMode.setValue(String.valueOf(pieMode));
         mPieMode.setOnPreferenceChangeListener(this);
     }
@@ -78,12 +78,12 @@ public class PieControl extends SettingsPreferenceFragment implements OnPreferen
         if (preference == mPieSize) {
             float pieSize = Float.valueOf((String) newValue);
             Settings.System.putFloat(getActivity().getContentResolver(),
-                    Settings.System.PA_PIE_SIZE, pieSize);
+                    "pie_size", pieSize);
             return true;
         } else if (preference == mPieMode) {
             int pieMode = Integer.valueOf((String) newValue);
             Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.PA_PIE_MODE, pieMode);
+                    "pie_mode", pieMode);
             return true;
         }
         return false;
